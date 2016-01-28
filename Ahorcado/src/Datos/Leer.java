@@ -23,7 +23,7 @@ public class Leer {
     public  void lectura() throws FileNotFoundException {
         
         try{  
-        File Archivo = new File("C:/Respuesta.txt");
+        File Archivo = new File("C:\\Users\\Alumnos\\git\\Scaynet-Upeu\\Ahorcado\\Respuesta.txt");
         FileReader Archivoleeido= new FileReader(Archivo);
         BufferedReader Rutaarchivo=new BufferedReader(Archivoleeido); 
         

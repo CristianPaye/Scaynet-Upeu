@@ -16,8 +16,9 @@ public class Operaciones {
     public String comparado[]= new String [6];
     public void comparaion(String cap[]) throws FileNotFoundException {
         l.lectura();
-        
+
         for(int x=0;x<6;x++) {
+            System.out.println(cap[x]);
             if(cap[x].equals(String.valueOf(l.datoleido[1].charAt(x)))){
                 
                 comparado[x]=cap[x];

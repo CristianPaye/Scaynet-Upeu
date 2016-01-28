@@ -23,6 +23,7 @@ public class Jahorcado extends javax.swing.JFrame {
         initComponents();
     }
     public String capt[]=new String [6];
+    //public String capt[]={"k","r","a","t","o","s"};
         int boton=0;
         ImageIcon icono=null;
         String concat="";
@@ -168,6 +169,7 @@ public class Jahorcado extends javax.swing.JFrame {
         
         try {
             leer.lectura();
+            jTextField1.setText(leer.datoleido[0]);
         } catch (FileNotFoundException ex) {
             Logger.getLogger(Jahorcado.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -175,11 +177,11 @@ public class Jahorcado extends javax.swing.JFrame {
         
      
        
-        try {
-            op.comparaion(capt);
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(Jahorcado.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        try {
+//            op.comparaion(capt);
+//        } catch (FileNotFoundException ex) {
+//            Logger.getLogger(Jahorcado.class.getName()).log(Level.SEVERE, null, ex);
+//        }
         
         concatenar();
         if(concat.equals(leer.datoleido[1])){
